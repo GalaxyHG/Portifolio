@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Helena Rezende</title>
+</head>
+<body>
+    <header id="inicio" class="d-flex-center">
+        <div class="nome branco">
+            HELENA <span class="verde">REZENDE</span>
+        </div>
+        <img onclick="menu()" class="dropbtn" src="./icons/menu.svg" alt="Menu">
+        <div id="dropdown" class="dropdown-content">
+                <a href="#inicio">Início</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+        </div>
+        <div class="nav-bar branco">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        <div class="networks">
+            <button class="circulo">
+                <img src="icons/email.svg" alt="Helena's E-mail">
+            </button>
+            <button class="circulo">
+                <img src="icons/github.svg" alt="Helena's GitHub">
+            </button>
+            <button class="circulo">
+                <img src="icons/linkedin.svg" alt="Helena's LinkedIn">
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="titulo branco">
+            HELENA REZENDE
+            <div class="subtitulo">Estudante de Ciência da Computação</div>
+        </div>
+    </main>
+    <aside class="sectionTopo" id="habilidades">
+        <div class="tituloA nome branco">HABILIDADES <hr></div>
+    </aside>
+    <section id="habilidadeSection">
+        <div class="containerHabilidade">
+            <div class="itensHabilityContainer">
+                <div class="barContainer">
+                    <div class="itemHability">
+                        <div class="branco">HTML</div>
+                        <div class="branco">90%</div>
+                    </div>
+                    <div class="outBar">
+                        <div class="inBar bar90"></div>
+                    </div>
+                </div>
+                <div class="barContainer">
+                    <div class="itemHability">
+                        <div class="branco">CSS</div>
+                        <div class="branco">90%</div>
+                    </div>
+                    <div class="outBar">
+                        <div class="inBar bar90"></div>
+                    </div>
+                </div>
+                <div class="barContainer">
+                    <div class="itemHability">
+                        <div class="branco">Javascript</div>
+                        <div class="branco">50%</div>
+                    </div>
+                    <div class="outBar">
+                        <div class="inBar bar50"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="itensHabilityContainer">
+                <div class="barContainer">
+                    <div class="itemHability">
+                        <div class="branco">C#</div>
+                        <div class="branco">80%</div>
+                    </div>
+                    <div class="outBar">
+                        <div class="inBar bar80"></div>
+                    </div>
+                </div>
+                <div class="barContainer">
+                    <div class="itemHability">
+                        <div class="branco">Pacote Office</div>
+                        <div class="branco">95%</div>
+                    </div>
+                    <div class="outBar">
+                        <div class="inBar bar95"></div>
+                    </div>
+                </div>
+                <div class="barContainer">
+                    <div class="itemHability">
+                        <div class="branco">Manuntenção e Configuração</div>
+                        <div class="branco">90%</div>
+                    </div>
+                    <div class="outBar">
+                        <div class="inBar bar90"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside id="projetos">
+            <div class="tituloA nome branco">PROJETOS <hr></div>
+        </aside>
+    </section>
+    <section id="projetoSection">
+        <div class="containerProjetos">
+            <div class="cardContainer">
+                <button class="card" onclick="window.location.href='https://patinhasfelizes2023.000webhostapp.com/'"></button><br>
+                <span class="branco"><b>Patinhas Felizes</b></span>
+                <p class="branco">Projeto de Conclusão de Curso desenvolvido por mim e minha equipe. O objetivo do site é ampliar a adoção de animais domésticos e aumentar a divulgação de animais perdidos.</p>
+            </div>
+            <div class="cardContainer">
+                <button class="card" onclick="window.location.href='https://bookshelfcotemig.netlify.com/'"><img src="img/bookshelf.png" alt=""></button><br>
+                <span class="branco"><b>Bookshelf</b></span>
+                <p class="branco">Um dos primeiros projetos que fiz em HTML. O objetivo da atividade é fazer um site e-commerce com tema livre.</p>
+            </div>
+        </div>
+        <aside id="contato">
+            <div class="tituloA nome branco">CONTATO <hr></div>
+        </aside>
+    </section>
+    <section id="contatoSection">
+        <div class="containerForm">
+            <form action="https://formsubmit.co/hrezende0207@gmail.com" method="POST">
+                <h2 class="branco">Entre em contato comigo</h2>
+                <br><br>
+                <div class="inputForm">
+                    <input type="text" name="name" placeholder="Nome:">
+                    <input type="text" name="email" placeholder="E-mail:">
+                </div>
+                <br><br>
+                <textarea name="message" id="name" cols="30" rows="10" placeholder="Mensagem:"></textarea>
+                <br><br>
+                <button>Enviar</button>
+            </form>
+        </div>
+    </section>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+/* General Configs */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-image: url(./img/1329182.jpeg);
+    background-color: rgba(0,0,0,30%);
+    background-blend-mode: multiply;
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #000;
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(158, 158, 158);
+    border-radius: 50px;
+}
+
+.nome {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.verde {
+    color: #00FF19;
+}
+
+.branco {
+    color:  #FFF;
+}
+
+/* Header Configs */
+
+header {
+    height: 100px;
+    background: rgba(80, 80, 80, 0.13);
+    box-shadow: 0px 16px 10px 0px rgba(0, 0, 0, 0.60);
+    padding: 0px 40px;
+    width: 100%;
+    position: sticky;
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    visibility: hidden;
+    position: absolute;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+.menu {
+    visibility: visible;
+}
+
+.dropbtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 16px 10px 0px rgba(0, 0, 0, 0.40);
+    min-width: 160px;
+    z-index: 1;
+    margin-top: 230px;
+    border-radius: 0px;
+    right: 50px;
+}
+
+.dropdown-content a {
+    color: #FFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.4s;
+}
+
+.dropdown-content a:hover {
+    background-color: #000;
+    text-shadow: 1px 1px 20px #FFF;
+}
+
+.show {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.4s;
+}
+
+a:hover {
+    text-shadow: 1px 1px 20px #ffffff;
+    border-bottom: solid 1px white;
+}
+
+/* Netwrok Icons Style Section */
+
+.networks {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.circulo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 1px white;
+    background: rgba(135, 135, 135, 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Areas Section */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14vh;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+aside {
+    box-shadow: 0px -5px 4px 0px rgba(255, 255, 255, 0.4);
+    height: 10vh;
+}
+
+#habilidadeSection {
+    height: 45vh;
+    background: #202020;
+
+}
+.containerHabilidade {
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#habilidades {
+    background: #202020;
+}
+
+#projetos {
+    background: #1A1A1A;
+}
+
+.tituloA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+hr {
+    fill: #FFF;
+    width: 250px;
+}
+
+/* Hability Bar Percent Style Section */
+
+.barContainer {
+    margin: 20px;
+}
+
+.itemHability {
+    display: flex;
+    justify-content: space-between;
+    width: 595px;
+    font-size: 18px;
+}
+
+.outBar {
+    background: rgba(174, 174, 174, 40%);
+    width: 600px;
+    height: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.inBar {
+    background: #00FF19;
+    height: 12px;
+    border-radius: 15px;
+    margin-left: 5px;
+}
+
+.bar95 {
+    width: 575px;
+}
+
+.bar90 {
+    width: 550px;
+}
+
+.bar80 {
+    width: 450px;
+}
+
+.bar50 {
+    width: 350px;
+}
+
+/* Projects Section */
+
+#projetoSection {
+    background: #1A1A1A;
+    height: 60vh;
+}
+
+.containerProjetos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    height: 50vh;
+}
+
+.card {
+    width: 450px;
+    height: 250px;
+    background-image: url("img/patinhas.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    border: solid 1px #000;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-bottom: 12px;
+}
+
+.card img {
+    width: 450px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.cardContainer {
+    width: 450px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+
+#contato {
+    background: #0D0D0D;
+}
+
+#contatoSection {
+    background: #0D0D0D;
+    height: 60vh;
+}
+
+/* Contact Section */
+
+input {
+    border: solid 1px #00FF19;
+    background: transparent;
+    color: #FFF;
+    width: 475px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+textarea {
+    border: solid 1px #00FF19;
+    background: transparent;
+    color: #FFF;
+    width: 1000px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 20px;
+    resize: none;
+}
+
+.inputForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerForm {
+    display: flex;
+    justify-content: center;
+}
+
+form button {
+    color: #00FF19;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid 1px #FFF;
+    background: transparent;
+    width: 150px;
+    height: 75px;
+}
+
+/* Responsivity Section */
+
+@media screen and (min-width: 500px)
+{
+    main {
+        height: 20vh;
+    }
+}
+
+@media screen and (min-width: 800px) 
+{
+    .nome {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    main {
+        height: 30vh;
+    }
+
+    aside {
+        border-radius: 80px 80px 0px 0px;
+    }
+}
+
+@media screen and (min-width: 1070px)
+{
+    .dropbtn {
+        visibility: hidden;
+    }
+
+    .nav-bar {
+        visibility: visible;
+        position: relative;
+        font-size: 24px;
+    }
+
+    header {
+        padding: 0px 100px;
+    }
+
+    main {
+        height: 40vh;
+        justify-content: left;
+        padding-left: 15vw;
+    }
+
+    .titulo {
+        text-align: center;
+        font-size: 42px;
+        font-weight: bold;
+    }
+
+    .subtitulo {
+        font-size: 20px;
+    }
+
+    .sectionTopo {
+        margin-top:8vh;
+    }
+}
+
+@media screen and (min-width: 1500px)
+{
+    main {
+        height: 60vh;
+    }
+
+    .sectionTopo {
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (min-width: 1700px)
+{
+    .sectionTopo {
+        margin-top: 0vh;
+    }
+}
