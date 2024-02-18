@@ -11,7 +11,7 @@ body {
     background-image: url(./img/1329182.jpeg);
     background-color: rgba(0,0,0,30%);
     background-blend-mode: multiply;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: 100%;
 }
 
@@ -118,7 +118,7 @@ header {
 a {
     text-decoration: none;
     color: #FFF;
-    transition: 0.4s;
+    transition: 0.2s;
 }
 
 a:hover {
@@ -129,7 +129,7 @@ a:hover {
 /* Netwrok Icons Style Section */
 
 .networks {
-    display: flex;
+    display: none;
     justify-content: space-around;
     width: 150px;
 }
@@ -143,6 +143,12 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.circulo:hover {
+    box-shadow: 1px 1px 20px #ffffff;
 }
 
 /* Areas Section */
@@ -171,14 +177,16 @@ aside {
 }
 
 #habilidadeSection {
-    height: 45vh;
+    height: 40vh;
     background: #202020;
 
 }
 .containerHabilidade {
-    height: 35vh;
+    height: 30vh;
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #habilidades {
@@ -210,14 +218,18 @@ hr {
 
 .itemHability {
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    width: 595px;
     font-size: 18px;
+    height: 100%;
+}
+
+.itensHabilityContainer {
+    width: 90%;
 }
 
 .outBar {
     background: rgba(174, 174, 174, 40%);
-    width: 600px;
     height: 20px;
     border-radius: 15px;
     display: flex;
@@ -236,15 +248,15 @@ hr {
 }
 
 .bar90 {
-    width: 550px;
+    width: 90%;
 }
 
 .bar80 {
-    width: 450px;
+    width: 80%;
 }
 
 .bar50 {
-    width: 350px;
+    width: 50%;
 }
 
 /* Projects Section */
@@ -303,11 +315,18 @@ hr {
 
 /* Contact Section */
 
+form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
 input {
     border: solid 1px #00FF19;
     background: transparent;
     color: #FFF;
-    width: 475px;
+    width: 48%;
     height: 50px;
     font-size: 20px;
     padding: 10px;
@@ -318,7 +337,7 @@ textarea {
     border: solid 1px #00FF19;
     background: transparent;
     color: #FFF;
-    width: 1000px;
+    width: 96%;
     font-size: 18px;
     padding: 10px;
     border-radius: 20px;
@@ -326,6 +345,7 @@ textarea {
 }
 
 .inputForm {
+    width: 96%;
     display: flex;
     justify-content: space-between;
 }
@@ -370,8 +390,12 @@ form button {
     }
 }
 
-@media screen and (min-width: 1070px)
+@media screen and (min-width: 1215px)
 {
+    .networks {
+        display: flex;
+    }   
+
     .dropbtn {
         visibility: hidden;
     }
@@ -405,6 +429,39 @@ form button {
     .sectionTopo {
         margin-top:8vh;
     }
+
+}
+
+@media screen and (min-width: 1060px)
+{
+    /* Hability Bar Percent Style Section */
+
+    .itemHability {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 18px;
+        height: 100%;
+    }
+
+    .itensHabilityContainer {
+        width: 40%;
+    }
+
+    .outBar {
+        background: rgba(174, 174, 174, 40%);
+        height: 20px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .inBar {
+        background: #00FF19;
+        height: 12px;
+        border-radius: 15px;
+        margin-left: 5px;
+    }
 }
 
 @media screen and (min-width: 1500px)
@@ -422,5 +479,34 @@ form button {
 {
     .sectionTopo {
         margin-top: 0vh;
+    }
+}
+
+@media screen and (max-width: 1060px)
+{
+    #habilidadeSection {
+    height: 65vh;
+    background: #202020;
+
+}
+    .containerHabilidade {
+        height: 55vh;
+    }
+}
+
+
+@media screen and (max-width: 1000px)
+{
+    #projetoSection {
+        background: #1A1A1A;
+        height: 100vh;
+    }
+    
+    .containerProjetos{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 50px;
+        height: 90vh;
     }
 }
