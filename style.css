@@ -356,7 +356,11 @@ input {
     height: 50px;
     font-size: 20px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
+}
+
+input::after {
+    border: solid 1px #00FF19;
 }
 
 textarea {
@@ -366,7 +370,7 @@ textarea {
     width: 96%;
     font-size: 18px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     resize: none;
 }
 
@@ -389,6 +393,8 @@ form button {
     background: transparent;
     width: 150px;
     height: 75px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 form span {
