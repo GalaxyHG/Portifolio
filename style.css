@@ -52,6 +52,7 @@ header {
     padding: 0px 40px;
     width: 100%;
     position: sticky;
+    top: 0;
 }
 
 .d-flex-center {
