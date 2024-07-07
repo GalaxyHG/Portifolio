@@ -214,6 +214,7 @@ aside {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 0% 15%;
 }
 
 #habilidades {
@@ -235,6 +236,41 @@ aside {
 hr {
     fill: #FFF;
     width: 250px;
+}
+
+/* Languages */
+
+.boxLanguages {
+    text-align: center;
+}
+
+.boxLanguages span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    letter-spacing: 1px;
+}
+
+.language {
+    width: 125px;
+    height: 140px;
+    background-color: #262626;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.language:hover {
+    width: 125px;
+    height: 140px;
+    background-color: #262626;
+    box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Hability Bar Percent Style Section */
