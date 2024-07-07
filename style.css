@@ -242,6 +242,7 @@ hr {
 
 .boxLanguages {
     text-align: center;
+    margin-top: 20px;
 }
 
 .boxLanguages span {
@@ -249,6 +250,7 @@ hr {
     font-weight: bold;
     color: #FFF;
     letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
 .language {
@@ -631,4 +633,10 @@ form span {
         font-size: 1.4rem ;
     }
     
+}
+
+@media screen and (max-width: 535px) {
+    #conserta {
+        margin-bottom: 500px;
+    }
 }
